@@ -8,7 +8,9 @@ for futher information, there are a number of scripts and manual configuration s
 * create the directory c:\zabbix\dfsr
                                                              
 * create the directory c:\zabbix\dfsr\powershell               
+
 * copy the dfsr_discovery.ps1 file to the powershell directory 
+
 * create a scheduled task to run every 6 hours with the command
   powershell -f "c:\zabbix\dfsr\powershell\dfsr_discovery.ps1  
 
