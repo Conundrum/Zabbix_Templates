@@ -18,10 +18,15 @@ for futher information, there are a number of scripts and manual configuration s
 
 * import the template
 
+* if the zabbix agent is running as a service, set it to login as an administrative user, otherwise the powershell
+   scripts will not run correctly, and will always return 0
+
 
 ## Going Forward
 
 This template is very much in the Alpha stages.. I'm not very farmiliar with powershell scripting,
-the scripts could use alot of work. 
+the scripts could use alot of work. The directory handling is pretty rudementary but it works, and I'd like to see
+zabbix be able to run the discovery itself in the future.
+
 
 
