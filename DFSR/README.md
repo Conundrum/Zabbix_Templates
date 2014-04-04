@@ -18,6 +18,11 @@ for futher information, there are a number of scripts and manual configuration s
 
 * import the template
 
+* add the following line to the end of the zabbix_agentd.conf file and restart<br/>
+```
+ UserParameter=dfsr.backlog[*],powershell -File c:\zabbix\dfsr\powershell\backlog.ps1 -RGName:"$1" -RFName:"$2" -SendingMember:$3 -ReceivingMember:$4
+```
+
 * if the zabbix agent is running as a service, set it to login as an administrative user, otherwise the powershell
    scripts will not run correctly, and will always return 0
 
